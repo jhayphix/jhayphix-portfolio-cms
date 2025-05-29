@@ -1,9 +1,11 @@
-# Sanity Clean Content Studio
+# Jhayphix Portfolio CMS
 
-Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
+This is the Sanity CMS backend for managing content on the [Jhayphix Portfolio](https://jhayphix.vercel.app).
 
-Now you can do the following things:
+## Tech Stack
+
+- [Sanity.io](https://www.sanity.io/)
+- TypeScript
+- Clean template setup
 
 - [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
