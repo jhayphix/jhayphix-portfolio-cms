@@ -3,6 +3,8 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 
+// import { SchemaTypeDefinition, DefineSchemaOptions, SchemaPluginOptions } from 'sanity'
+
 export default defineConfig({
   name: 'default',
   title: 'JhayPhix Portfolio CMS',
@@ -14,5 +16,6 @@ export default defineConfig({
 
   schema: {
     types: schemaTypes,
+
   },
 })
