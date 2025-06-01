@@ -160,11 +160,11 @@ export default {
           type: 'string',
           options: {
             list: [
-              {title: 'Solo Project', value: 'solo'},
-              {title: 'Collaborative', value: 'collaborative'},
-              {title: 'Open Source Contribution', value: 'openSource'},
+              {title: 'Solo Project', value: 'soloProject'},
+              {title: 'Collaborative Work', value: 'collaborativeWork'},
+              {title: 'Open Source Contribution', value: 'openSourceContribution'},
               {title: 'Client Work', value: 'clientWork'},
-              {title: 'Academic/Capstone Project', value: 'academic'},
+              {title: 'Academic/Capstone Project', value: 'academicOrCapstoneProject'},
               {title: 'Hackathon', value: 'hackathon'},
             ],
             layout: 'dropdown',
@@ -178,7 +178,7 @@ export default {
           of: [{type: 'string'}],
           description: 'Names or roles of team members involved (for collaborative work)',
           hidden: ({parent}: {parent: {collaborationType?: string}}) =>
-            parent?.collaborationType === 'solo',
+            parent?.collaborationType === 'soloProject',
         },
         {
           name: 'challenges',
@@ -186,6 +186,13 @@ export default {
           type: 'array',
           of: [{type: 'string'}],
           description: 'Challenges faced and how they were solved',
+        },
+        {
+          name: 'solutions',
+          title: 'Solutions',
+          type: 'array',
+          of: [{type: 'string'}],
+          description: 'How the Challenges Were Solved',
         },
       ],
     },
