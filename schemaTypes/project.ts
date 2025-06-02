@@ -41,14 +41,6 @@ export default {
       validation: (Rule: Rule) => Rule.required(),
     },
     {
-      name: 'description',
-      title: 'Description',
-      type: 'text',
-      description: 'A short summary of what the project does',
-      placeholder: 'Write a brief description...',
-      validation: (Rule: Rule) => Rule.required(),
-    },
-    {
       name: 'type',
       title: 'Type',
       type: 'string',
@@ -62,6 +54,22 @@ export default {
       },
       placeholder: 'Select project type',
       validation: (Rule: Rule) => Rule.required(),
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+      description: 'A short summary of what the project does',
+      placeholder: 'Write a brief description...',
+      validation: (Rule: Rule) => Rule.required(),
+    },
+    {
+      name: 'projectOverview',
+      title: 'Project Overview',
+      type: 'array',
+      description:
+        'Brief summary highlighting the project’s aims, objectives, and key focus areas. Use each block for a separate paragraph.',
+      of: [{type: 'text'}],
     },
 
     {
